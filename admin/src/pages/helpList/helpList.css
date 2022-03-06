@@ -1,0 +1,11 @@
+.helpDisplay{
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    background-color: #589bf3;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin: 5px;
+}
