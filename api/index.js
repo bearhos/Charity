@@ -15,7 +15,7 @@ const cors = require("cors");
 const username = encodeURIComponent("<username>");
 const password = encodeURIComponent("<password>");
 mongoose
-  .connect("mongodb+srv://admin2:gxHcfPKzV30lJauG@cluster0.ccamx.mongodb.net/?retryWrites=true&w=majority")
+  .connect("mongodb+srv://admin2:gxHcfPKzV30lJauG@cluster0.ccamx.mongodb.net/shop?retryWrites=true&w=majority")
   .then(() => console.log("DB Connection Successfull!"))
   .catch((err) => {
     console.log(err);
