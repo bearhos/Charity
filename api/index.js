@@ -12,9 +12,10 @@ const helpRoute = require("./routes/help");
 const stripeRoute = require("./routes/stripe");
 const cors = require("cors");
 
-
+const username = encodeURIComponent("<username>");
+const password = encodeURIComponent("<password>");
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect("mongodb+srv://admin2:gxHcfPKzV30lJauG@cluster0.ccamx.mongodb.net/?retryWrites=true&w=majority")
   .then(() => console.log("DB Connection Successfull!"))
   .catch((err) => {
     console.log(err);
